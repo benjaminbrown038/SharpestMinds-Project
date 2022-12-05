@@ -30,6 +30,10 @@ Activate Virtual Environment
 
 ```source env/bin/activate```
 
+Build Dependency File
+
+```pip freeze > requirements.txt```
+
 Install Project Dependency Files
 
 ```pip3 install -r requirements.txt```

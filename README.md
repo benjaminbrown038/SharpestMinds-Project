@@ -24,11 +24,23 @@ Install Virtual Environment Library
 
 Create Virtual Environment
 
-``` python3 venv new_project```
+``` python3 -m venv new_project```
 
 Activate Virtual Environment
 
 ```source env/bin/activate```
+
+Install Project Dependency Files
+
+```pip3 install -r requirements.txt```
+
+Run Main File
+
+```python3 class-images.py```
+
+
+
+Terminal will prompt user to input
 
 Deactivate Virtual Environment
 

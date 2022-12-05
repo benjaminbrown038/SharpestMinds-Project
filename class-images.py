@@ -5,33 +5,21 @@
 parameters: <string> will be the search query for google images
 returns:
 '''
-# pause after scrolling results page
+
 import time
-# for accessing web
 import selenium
-# for chromedriver
 from selenium import webdriver
-# to navigate results page
 from selenium.webdriver.common.keys import Keys
-# to retreive http data
 import requests
-# checking and making directory
 import os
-# open image after decoded
-import PIL
-# open image after decoded
-from PIL import Image
-# decoding
 import io
-# decoding
 import base64
 import webdriver_manager
 from webdriver_manager import chrome
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import cv2 as cv
-# create class called Data
-
+from PIL import Image
 
 '''
     Using Selenium chromedriver in local directory will fetch google images for binary classification model
@@ -41,7 +29,6 @@ returns:
 
 '''
 
-# initializer for class with input search name
 search_name = input("Class:")
 # specific to user Desktop where chrome driver is downloaded
 wd = webdriver.Chrome(ChromeDriverManager().install())
